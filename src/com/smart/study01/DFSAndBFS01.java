@@ -1,6 +1,10 @@
 package com.smart.study01;
 
 
+import javafx.collections.transformation.SortedList;
+
+import java.util.*;
+
 /**
  *Problem
  * 그래프를 DFS로 탐색한 결과와 BFS로 탐색한 결과를 출력하는 프로그램을 작성하시오.
@@ -33,7 +37,51 @@ package com.smart.study01;
  * 1 2 3 4
  */
 public class DFSAndBFS01 {
+    public static void main(String[] args){
 
+        Scanner sc = new Scanner("System.in");
+        int N = sc.nextInt();//정점
+        int M = sc.nextInt();//간선
+        int startPoint = sc.nextInt();//시작점
+
+        int a,b;
+        //방문한 지점을 기록
+        Set<Integer> visitedSet= new HashSet<>();
+
+        Set<Integer> array[] = new Set[N];
+
+        for(int i =0;i<M;i++){
+            a=sc.nextInt();
+            b=sc.nextInt();
+            array[a-1].add(b);
+
+
+        }
+
+
+
+
+
+    }
+
+
+    public String DFSFunction(int startPoint, int vertexCount){
+
+
+            //내부에서 더이상 연결지점을 찾지 못한다면 지금까지의 탐색결과를 리턴해준다.
+
+
+
+
+        return null;
+    }
+
+    public String BFSFunction(){
+        Queue<Integer> queue = new LinkedList<>();
+
+
+        return null;
+    }
 
 
 
